@@ -1,4 +1,4 @@
 src/app/code/community/Webgriffe/OpenGraph/ app/code/community/Webgriffe/OpenGraph/
 src/app/etc/modules/Webgriffe_OpenGraph.xml app/etc/modules/Webgriffe_OpenGraph.xml
 src/app/design/frontend/base/default/template/webgriffe/opengraph app/design/frontend/base/default/template/webgriffe/opengraph
-src/app/design/frontend/base/default/layout/webgriffe_opengraph.xml app/design/adminhtml/base/default/layout/webgriffe_opengraph.xml
+src/app/design/frontend/base/default/layout/webgriffe_opengraph.xml app/design/frontend/base/default/layout/webgriffe_opengraph.xml
