@@ -7,30 +7,30 @@
     </modules>
     <global>
         <models>
-            <Webgriffe_OpenGraph>
+            <webgriffe_opengraph>
                 <class>Webgriffe_OpenGraph_Model</class>
-                <resourceModel>Webgriffe_OpenGraph_resource</resourceModel>
-            </Webgriffe_OpenGraph>
-            <Webgriffe_OpenGraph_resource>
+                <resourceModel>webgriffe_opengraph_resource</resourceModel>
+            </webgriffe_opengraph>
+            <webgriffe_opengraph_resource>
                 <class>Webgriffe_OpenGraph_Model_Resource</class>
-            </Webgriffe_OpenGraph_resource>
+            </webgriffe_opengraph_resource>
         </models>
         <blocks>
-            <Webgriffe_OpenGraph>
+            <webgriffe_opengraph>
                 <class>Webgriffe_OpenGraph_Block</class>
-            </Webgriffe_OpenGraph>
+            </webgriffe_opengraph>
         </blocks>
         <helpers>
-            <Webgriffe_OpenGraph>
+            <webgriffe_opengraph>
                 <class>Webgriffe_OpenGraph_Helper</class>
-            </Webgriffe_OpenGraph>
+            </webgriffe_opengraph>
         </helpers>
         <resources>
-            <Webgriffe_OpenGraph_setup>
+            <webgriffe_opengraph_setup>
                 <setup>
                     <module>Webgriffe_OpenGraph</module>
                 </setup>
-            </Webgriffe_OpenGraph_setup>
+            </webgriffe_opengraph_setup>
         </resources>
     </global>
     <frontend>
