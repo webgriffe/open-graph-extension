@@ -1,5 +1,5 @@
 {
-    "name": "vendor/module",
+    "name": "webgriffe/open-graph",
     "type": "magento-module",
     "license":"MIT",
     "description":"Open Graph integration",
