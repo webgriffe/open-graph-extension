@@ -33,4 +33,13 @@
             </Webgriffe_OpenGraph_setup>
         </resources>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <webgriffe_opengraph>
+                    <file>webgriffe_opengraph.xml</file>
+                </webgriffe_opengraph>
+            </updates>
+        </layout>
+    </frontend>
 </config>

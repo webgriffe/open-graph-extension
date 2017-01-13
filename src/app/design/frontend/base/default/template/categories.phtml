@@ -1,0 +1,18 @@
+<?php
+/** @var Webgriffe_OpenGraph_Block_Opengraph $this */
+/** @var Mage_Catalog_Model_Category $category */
+$category = Mage::registry('current_category');
+?>
+<?php if ((string)$this->getAppId() != ''): ?>
+    <meta property="fb:app_id" content="<?php echo (string)$this->getAppId(); ?>" />
+<?php endif;?>
+<?php if ((string)$this->getAdminId() != ''): ?>
+    <meta property="fb:admins" content="<?php echo (string)$this->getAdminId(); ?>" />
+<?php endif;?>
+<?php if ($category): ?>
+    <meta property="og:url" content="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" />
+    <meta property="og:type" content="product.group" />
+    <meta property="og:title" content="<?php echo trim(htmlentities($category->getName(), ENT_QUOTES)) ?>" />
+    <meta property="og:description" content="<?php echo trim(htmlentities($category->getDescription(), ENT_QUOTES)) ?>" />
+    <meta property="og:image" content="<?php echo $category->getImageUrl(); ?>" />
+<?php endif; ?>

@@ -1,0 +1,20 @@
+<?php
+    /** @var Naya_OpenGraph_Block_Opengraph $this */
+    /** @var Mage_Catalog_Model_Product $product */
+?>
+<?php $product = Mage::registry('current_product'); ?>
+<?php if ((string)$this->getAppId() != ''): ?>
+    <meta property="fb:app_id" content="<?php echo (string)$this->getAppId(); ?>" />
+<?php endif;?>
+<?php if ((string)$this->getAdminId() != ''): ?>
+    <meta property="fb:admins" content="<?php echo (string)$this->getAdminId(); ?>" />
+<?php endif;?>
+<?php if ($product): ?>
+    <meta property="og:url" content="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="<?php echo trim(htmlentities($product->getName(), ENT_QUOTES)) ?>" />
+    <meta property="og:description" content="<?php echo trim(htmlentities($product->getShortDescription(), ENT_QUOTES)) ?>" />
+    <?php foreach ($product->getMediaGallery('images') as $_image): ?>
+        <meta property="og:image" content="<?php echo Mage::helper('catalog/image')->init($product, 'image', $_image['file']);?>" />
+    <?php endforeach;?>
+<?php endif; ?>
