@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vendor_Module>
+            <version>1.0.0</version>
+        </Vendor_Module>
+    </modules>
+    <global>
+        <models>
+            <vendor_module>
+                <class>Vendor_Module_Model</class>
+                <resourceModel>vendor_module_resource</resourceModel>
+            </vendor_module>
+            <vendor_module_resource>
+                <class>Vendor_Module_Model_Resource</class>
+            </vendor_module_resource>
+        </models>
+        <blocks>
+            <vendor_module>
+                <class>Vendor_Module_Block</class>
+            </vendor_module>
+        </blocks>
+        <helpers>
+            <vendor_module>
+                <class>Vendor_Module_Helper</class>
+            </vendor_module>
+        </helpers>
+        <resources>
+            <vendor_module_setup>
+                <setup>
+                    <module>Vendor_Module</module>
+                </setup>
+            </vendor_module_setup>
+        </resources>
+    </global>
+</config>
