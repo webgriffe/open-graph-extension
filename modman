@@ -1,2 +1,2 @@
-src/app/code/community/Vendor/Module/ app/code/community/Vendor/Module/
-src/app/etc/modules/Vendor_Module.xml app/etc/modules/Vendor_Module.xml
+src/app/code/community/Webgriffe/OpenGraph/ app/code/community/Webgriffe/OpenGraph/
+src/app/etc/modules/Webgriffe_OpenGraph.xml app/etc/modules/Webgriffe_OpenGraph.xml

@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Vendor_Module>
+        <Webgriffe_OpenGraph>
             <version>1.0.0</version>
-        </Vendor_Module>
+        </Webgriffe_OpenGraph>
     </modules>
     <global>
         <models>
-            <vendor_module>
-                <class>Vendor_Module_Model</class>
-                <resourceModel>vendor_module_resource</resourceModel>
-            </vendor_module>
-            <vendor_module_resource>
-                <class>Vendor_Module_Model_Resource</class>
-            </vendor_module_resource>
+            <Webgriffe_OpenGraph>
+                <class>Webgriffe_OpenGraph_Model</class>
+                <resourceModel>Webgriffe_OpenGraph_resource</resourceModel>
+            </Webgriffe_OpenGraph>
+            <Webgriffe_OpenGraph_resource>
+                <class>Webgriffe_OpenGraph_Model_Resource</class>
+            </Webgriffe_OpenGraph_resource>
         </models>
         <blocks>
-            <vendor_module>
-                <class>Vendor_Module_Block</class>
-            </vendor_module>
+            <Webgriffe_OpenGraph>
+                <class>Webgriffe_OpenGraph_Block</class>
+            </Webgriffe_OpenGraph>
         </blocks>
         <helpers>
-            <vendor_module>
-                <class>Vendor_Module_Helper</class>
-            </vendor_module>
+            <Webgriffe_OpenGraph>
+                <class>Webgriffe_OpenGraph_Helper</class>
+            </Webgriffe_OpenGraph>
         </helpers>
         <resources>
-            <vendor_module_setup>
+            <Webgriffe_OpenGraph_setup>
                 <setup>
-                    <module>Vendor_Module</module>
+                    <module>Webgriffe_OpenGraph</module>
                 </setup>
-            </vendor_module_setup>
+            </Webgriffe_OpenGraph_setup>
         </resources>
     </global>
 </config>

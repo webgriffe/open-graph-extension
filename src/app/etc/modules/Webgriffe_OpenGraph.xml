@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Vendor_Module>
+        <Webgriffe_OpenGraph>
             <active>true</active>
             <codePool>community</codePool>
-        </Vendor_Module>
+        </Webgriffe_OpenGraph>
     </modules>
 </config>

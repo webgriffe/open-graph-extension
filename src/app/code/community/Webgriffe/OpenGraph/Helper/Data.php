@@ -1,5 +1,5 @@
 <?php
 
-class Vendor_Module_Helper_Data extends Mage_Core_Helper_Abstract
+class Webgriffe_OpenGraph_Helper_Data extends Mage_Core_Helper_Abstract
 {
 }
