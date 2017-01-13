@@ -25,13 +25,6 @@
                 <class>Webgriffe_OpenGraph_Helper</class>
             </webgriffe_opengraph>
         </helpers>
-        <resources>
-            <webgriffe_opengraph_setup>
-                <setup>
-                    <module>Webgriffe_OpenGraph</module>
-                </setup>
-            </webgriffe_opengraph_setup>
-        </resources>
     </global>
     <frontend>
         <layout>
