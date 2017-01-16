@@ -35,4 +35,11 @@
             </updates>
         </layout>
     </frontend>
+    <default>
+        <webgriffe_opengraph>
+            <product_view>
+                <only_base_image>1</only_base_image>
+            </product_view>
+        </webgriffe_opengraph>
+    </default>
 </config>

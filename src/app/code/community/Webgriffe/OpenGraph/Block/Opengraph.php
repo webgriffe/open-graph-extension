@@ -5,7 +5,7 @@ class Webgriffe_OpenGraph_Block_Opengraph extends Mage_Core_Block_Template
     const WEBGRIFFE_OPENGRAPH_GENERAL_ADMIN_CONFIG_PATH = 'webgriffe_opengraph/general/admin_id';
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getApplicationId()
     {
@@ -13,7 +13,7 @@ class Webgriffe_OpenGraph_Block_Opengraph extends Mage_Core_Block_Template
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getAdminId()
     {

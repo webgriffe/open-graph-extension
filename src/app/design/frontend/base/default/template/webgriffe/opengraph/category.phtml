@@ -3,8 +3,8 @@
 /** @var Mage_Catalog_Model_Category $category */
 $category = Mage::registry('current_category');
 ?>
-<?php if ((string)$this->getAppId() != ''): ?>
-    <meta property="fb:app_id" content="<?php echo (string)$this->getAppId(); ?>" />
+<?php if ((string)$this->getApplicationId() != ''): ?>
+    <meta property="fb:app_id" content="<?php echo (string)$this->getApplicationId(); ?>" />
 <?php endif;?>
 <?php if ((string)$this->getAdminId() != ''): ?>
     <meta property="fb:admins" content="<?php echo (string)$this->getAdminId(); ?>" />
