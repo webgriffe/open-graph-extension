@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <config>
+    <tabs>
+        <webgriffe translate="label">
+            <label>Webgriffe Extensions</label>
+            <sort_order>999000</sort_order>
+        </webgriffe>
+    </tabs>
     <sections>
         <webgriffe_opengraph translate="label" module="webgriffe_opengraph">
             <class>separator-top</class>
@@ -12,7 +18,7 @@
             <show_in_store>1</show_in_store>
             <groups>
                 <general translate="label" module="webgriffe_opengraph">
-                    <label>General settings</label>
+                    <label>General</label>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
