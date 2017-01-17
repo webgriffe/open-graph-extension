@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <layout>
+    <cms_index_index>
+        <reference name="head">
+            <block type="webgriffe_opengraph/opengraph" name="webgriffe.open.graph.homepage" as="webgriffe_open_graph_homepage" template="webgriffe/opengraph/homepage.phtml" />
+        </reference>
+    </cms_index_index>
+
     <catalog_product_view>
         <reference name="head">
             <block type="webgriffe_opengraph/opengraph" name="webgriffe.open.graph.product" as="webgriffe_open_graph_product" template="webgriffe/opengraph/product.phtml" />
