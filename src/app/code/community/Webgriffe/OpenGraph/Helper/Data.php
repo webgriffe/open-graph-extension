@@ -22,4 +22,13 @@ class Webgriffe_OpenGraph_Helper_Data extends Mage_Core_Helper_Abstract
             Mage::getStoreConfig(self::WEBGRIFFE_OPENGRAPH_HOMEPAGE_IMAGE_PATH_CONFIG_PATH)
         );
     }
+
+    /**
+     * @param string $str
+     * @return string
+     */
+    public function sanitizeString($str)
+    {
+        return trim(str_replace('"', '', strip_tags($str)));
+    }
 }

@@ -2,6 +2,7 @@
 /** @var Webgriffe_OpenGraph_Block_Opengraph $this */
 /** @var Mage_Catalog_Model_Category $category */
 $category = Mage::registry('current_category');
+$helper = Mage::helper('webgriffe_opengraph');
 ?>
 <?php if ((string)$this->getApplicationId() != ''): ?>
     <meta property="fb:app_id" content="<?php echo (string)$this->getApplicationId(); ?>" />
@@ -12,7 +13,7 @@ $category = Mage::registry('current_category');
 <?php if ($category): ?>
     <meta property="og:url" content="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" />
     <meta property="og:type" content="product.group" />
-    <meta property="og:title" content="<?php echo trim(htmlentities($category->getName(), ENT_QUOTES)) ?>" />
-    <meta property="og:description" content="<?php echo trim(htmlentities($category->getDescription(), ENT_QUOTES)) ?>" />
+    <meta property="og:title" content="<?php echo $helper->sanitizeString($category->getName()) ?>" />
+    <meta property="og:description" content="<?php echo $helper->sanitizeString($category->getDescription()) ?>" />
     <meta property="og:image" content="<?php echo $category->getImageUrl(); ?>" />
 <?php endif; ?>
