@@ -14,5 +14,5 @@ $headBlock = $this->getLayout()->getBlock('head');
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?php echo $headBlock->getTitle() ?>" />
     <meta property="og:description" content="<?php echo trim(htmlentities($headBlock->getDescription(), ENT_QUOTES)) ?>"/>
-    <meta property="og:image" content="<?php echo $headBlock->getSkinUrl(Mage::getStoreConfig('design/header/logo_src')); ?>" />
+    <meta property="og:image" content="<?php echo Mage::helper('webgriffe_opengraph')->getHomepageOgImagePath(); ?>" />
 <?php endif; ?>
