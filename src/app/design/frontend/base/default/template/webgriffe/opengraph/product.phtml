@@ -2,19 +2,18 @@
 /** @var Webgriffe_OpenGraph_Block_Opengraph $this */
 /** @var Mage_Catalog_Model_Product $product */
 $product = Mage::registry('current_product');
-$helper = Mage::helper('webgriffe_opengraph');
 ?>
-<?php if ((string)$this->getApplicationId() != ''): ?>
+<?php if ((string)$this->getApplicationId() !== ''): ?>
     <meta property="fb:app_id" content="<?php echo (string)$this->getApplicationId(); ?>" />
 <?php endif;?>
-<?php if ((string)$this->getAdminId() != ''): ?>
+<?php if ((string)$this->getAdminId() !== ''): ?>
     <meta property="fb:admins" content="<?php echo (string)$this->getAdminId(); ?>" />
 <?php endif;?>
 <?php if ($product): ?>
     <meta property="og:url" content="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" />
     <meta property="og:type" content="product" />
-    <meta property="og:title" content="<?php echo $helper->sanitizeString($product->getName()) ?>" />
-    <meta property="og:description" content="<?php echo $helper->sanitizeString($product->getShortDescription()) ?>" />
+    <meta property="og:title" content="<?php echo $this->getOpenGraphHelper()->sanitizeString($product->getName()) ?>" />
+    <meta property="og:description" content="<?php echo $this->getProductDescription($product) ?>" />
     <?php if (Mage::helper('webgriffe_opengraph')->useOnlyBaseImageForProduct()): ?>
         <meta property="og:image" content="<?php echo Mage::getModel('catalog/product_media_config')->getMediaUrl($product->getImage()); ?>" />
     <?php else: ?>

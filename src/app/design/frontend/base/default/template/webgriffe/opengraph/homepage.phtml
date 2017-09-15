@@ -2,18 +2,17 @@
 /** @var Webgriffe_OpenGraph_Block_Opengraph $this */
 /** @var Mage_Cms_Model_Page $page */
 $headBlock = $this->getLayout()->getBlock('head');
-$helper = Mage::helper('webgriffe_opengraph');
 ?>
-<?php if ((string)$this->getApplicationId() != ''): ?>
+<?php if ((string)$this->getApplicationId() !== ''): ?>
     <meta property="fb:app_id" content="<?php echo (string)$this->getApplicationId(); ?>" />
 <?php endif;?>
-<?php if ((string)$this->getAdminId() != ''): ?>
+<?php if ((string)$this->getAdminId() !== ''): ?>
     <meta property="fb:admins" content="<?php echo (string)$this->getAdminId(); ?>" />
 <?php endif;?>
 <?php if ($headBlock): ?>
     <meta property="og:url" content="<?php echo Mage::helper('core/url')->getCurrentUrl();?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $helper->sanitizeString($headBlock->getTitle()) ?>" />
-    <meta property="og:description" content="<?php echo $helper->sanitizeString($headBlock->getDescription()) ?>"/>
+    <meta property="og:title" content="<?php echo $this->getOpenGraphHelper()->sanitizeString($headBlock->getTitle()) ?>" />
+    <meta property="og:description" content="<?php echo $this->getOpenGraphHelper()->sanitizeString($headBlock->getDescription()) ?>"/>
     <meta property="og:image" content="<?php echo Mage::helper('webgriffe_opengraph')->getHomepageOgImagePath(); ?>" />
 <?php endif; ?>
